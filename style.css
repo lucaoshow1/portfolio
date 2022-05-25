@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #407094;
+    font-family: 'PT SANS NARROW', sans-serif ;
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+    transition: 'background-color' 0.2s linear ;
+}
+body.dark{
+    background-color: #232c35;
+    
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  }
+  
+  .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9px;
+    
+}
+  
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  }
+
+h1{
+    text-align: center;
+    margin-bottom: px;
+    font-size: 35px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.corpo{
+   position: relative; 
+   width: auto;
+   height: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 30px 0;
+   padding: 30px 0;
+}
+.corpo__c{
+    background: #0505053f;
+    border-radius: 5%;
+    padding: 30px;
+    box-shadow: inset 0 0 1em #407094;
+    width: auto;
+}
+
+.perfil--foto{
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.perfil-foto{
+   
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;  
+  
+}
+.rede-social{
+    display: flex;
+    justify-content: center;
+    
+}
+.img1{
+    margin: 8px;
+}
+
+.perfil-dev{
+    text-align: center;
+    margin: 15px;
+    font-size: 22px;
+
+}
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: inset 0 0 1em #407094;
+   
+}
+
+.skills1, .skills2, .skills3, .projects1, .projects2, .projects3{
+    transition: 400ms;
+    margin: 5px 0;
+    text-align: center;
+    
+}
+.skills1:hover{
+    color:  rgb(145, 56, 56);
+	transform: scale(1.2);	
+}
+.skills2:hover{
+    color:  rgb(77, 127, 156);
+	transform: scale(1.2);	
+}
+.skills3:hover{
+    color:  rgb(197, 199, 93);
+	transform: scale(1.2);	
+}
+.projects1:hover{
+    color:  rgb(255, 255, 255);
+	transform: scale(1.2);
+}
+.projects2:hover{
+    color:  rgb(255, 255, 255);
+	transform: scale(1.2);
+}
+.projects3:hover{
+    color:  rgb(255, 255, 255);
+	transform: scale(1.2);
+}
+
+.projects{
+    box-shadow: inset 0 0 1em #407094;
+    margin: 30px 0 ;
+}
+
+.rodape{
+    display: block;
+    justify-content: center;
+    text-align: flex-end;
+
+}
+.copy{
+    text-align: center;
+    margin-bottom: 25px;
+}
